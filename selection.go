@@ -30,13 +30,13 @@ func Lselection_Html(L *lua.LState) int {
 	sel := check_Lselection(L, 1)
 	html, err := sel.Html()
 	if err != nil {
-		L.Push(lua.LString(html))
 		L.Push(lua.LNil)
+		L.Push(lua.LString(err.Error()))
 		return 2
 	}
+
 	L.Push(lua.LString(html))
-	L.Push(lua.LString(err.Error()))
-	return 2
+	return 1
 }
 
 func Lselection_Text(L *lua.LState) int {
