@@ -4,7 +4,7 @@ A **jQuery-like DOM search & manipulation tool** for [Gopher-Lua](https://github
 
 DomQuery allows you to traverse and manipulate HTML documents in Lua scripts with a familiar, chainable API inspired by jQuery.
 
-## 🚀 Features
+## Features
 
 - jQuery-like selectors (`#id`, `.class`, `tag > child`, `:nth-child()`, etc.)
 - DOM traversal & manipulation (`find`, `first`, `text`, `attrOr`, etc.)
